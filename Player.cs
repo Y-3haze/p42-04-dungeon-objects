@@ -45,6 +45,8 @@ public class Player
     public void TakeDamage(int amount)
     {
         Health -= amount;
+        if (Health<=0)
+        Health=0;
     }
 
     // Игрок лечится. Здоровье не поднимается выше MaxHealth.
